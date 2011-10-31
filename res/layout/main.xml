@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+android:id="@+id/frameLayout1" android:layout_gravity="top"> 
+
+<View android:background="#d0000080" 
+android:layout_height="50sp" 
+android:layout_width="320sp" 
+android:id="@+id/Pawn" android:layout_gravity="top"> 
+</View>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="bottom">
+	<Button android:text="設置" android:id="@+id/button1" android:layout_width="60sp" android:layout_height="wrap_content"></Button> 
+	<LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_weight="1" android:orientation="vertical" android:background="#80000000">
+		<TextView android:text="xxx" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_width="fill_parent" android:textSize="14sp" android:padding="1sp" android:ellipsize="start" android:singleLine="true" android:textColor="#ffffffff"></TextView>
+		<TextView android:text="(xxx,xxx)" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:textSize="18sp" android:padding="1sp" android:gravity="center" android:textColor="#ffffffff"></TextView>
+	</LinearLayout>
+	<Button android:text="解除" android:id="@+id/button2" android:layout_width="60sp" android:layout_height="wrap_content"></Button> 
+</LinearLayout>
+</FrameLayout>

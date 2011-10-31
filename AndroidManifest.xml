@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.matsumo.adfuta"
+      android:versionName="0.0.1" android:versionCode="001">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="9" />
+	<supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:anyDensity="true" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+<!-- 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".AdFutaActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<service android:enabled="true" android:name=".AdFutaService" android:label="@string/app_name" />
+        <receiver android:name=".TriggerOnBoot"
+             android:enabled="true"
+             android:exported="false"
+             android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
